@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Etch a Sketch</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <img src="logo.png" id="logo" />
+    </header>
+
+    <main>
+      <div id="grid" class="grid"></div>
+      <div id="btn-menu">
+        <button class="btn">Color mode</button>
+        <button class="btn">Rainbow mode</button>
+        <button class="btn">Earser</button>
+        <button class="btn">Clean</button>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <p class="copyright">
+        Copyright ©
+        <script>
+          document.write(new Date().getFullYear());
+        </script>
+        razlevio
+      </p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
