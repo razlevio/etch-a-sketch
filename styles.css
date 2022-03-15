@@ -51,15 +51,23 @@ footer {
 
 button,
 input {
-  width: 150px;
-  height: 35px;
-  font-size: 18px;
+  width: 250px;
+  height: 50px;
+  font-size: 24px;
   background-color: var(--background-color);
-  color: #183a1d;
-  border: 1px solid #183a1d;
   border-radius: 8px;
   caret-color: transparent;
   cursor: pointer;
+}
+
+button {
+  padding: 10px 20px;
+  border: 2px solid var(--header-color);
+  border-radius: 12px;
+}
+
+button.active {
+  background-color: var(--primary-orange);
 }
 
 button,
@@ -94,38 +102,11 @@ input[type="color"]::-webkit-color-swatch {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-.btn:hover,
-.btn:focus,
-.btn:active .btn::after {
-  /*background-image: linear-gradient(144deg, #96fbc4 0%, #f9f586 100%);*/
-  color: var(--primary-orange);
-  background-color: var(--button-color);
-}
-
-.clear-btn {
-  width: 150px;
-  height: 35px;
-  font-size: 18px;
-  background-color: var(--background-color);
-  color: #183a1d;
-  border: 1px solid #183a1d;
-  border-radius: 8px;
-  caret-color: transparent;
-  cursor: pointer;
-}
-
-.clear-btn:hover {
-  /*background-image: linear-gradient(144deg, #96fbc4 0%, #f9f586 100%);*/
-  color: var(--primary-orange);
-  background-color: var(--button-color);
-}
-
 .grid-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 150px;
-  padding-bottom: 100px;
+  margin: 100px;
 }
 
 .grid {
@@ -154,6 +135,7 @@ input[type="color"]::-webkit-color-swatch {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  margin-bottom: 25px;
 }
 
 .slider-and-value {
