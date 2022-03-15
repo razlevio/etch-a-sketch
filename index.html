@@ -12,13 +12,20 @@
       <img src="logo.png" id="logo" />
     </header>
 
-    <main>
-      <div id="grid" class="grid"></div>
-      <div id="btn-menu">
-        <button class="btn">Color mode</button>
-        <button class="btn">Rainbow mode</button>
-        <button class="btn">Earser</button>
-        <button class="btn">Clean</button>
+    <main class="main">
+      <div class="grid-container">
+        <div id="grid" class="grid"> </div>
+      </div>
+      <div id="btn-menu" class="btn-menu">
+        <div class="slider-and-value">
+          <p id="sizeValue" class="size-value">8 x 8</p>
+          <input type="range" min="1" max="64" value="8" id="slider" class="slider"/>
+        </div>
+        <input type="color" id="picker" value="#e1eedd"/>
+        <button id="colorBtn" class="btn">Color mode</button>
+        <button id="rainbowBtn" class="btn">Rainbow mode</button>
+        <button id="eraserBtn" class="btn">Eraser</button>
+        <button id="clearBtn" class="clear-btn">Clear</button>
       </div>
     </main>
 
