@@ -9,8 +9,8 @@
 
 html,
 body {
-  height: 100%;
-  width: 100%;
+  position: relative;
+  min-height: 100%;
   padding: 0;
   margin: 0;
 }
@@ -38,25 +38,18 @@ main {
   justify-content: space-evenly;
 }
 
-footer {
-  height: 30px;
+#logo {
+  height: 120px;
   display: flex;
   justify-content: center;
-  align-items: center;
-  background-color: var(--footer-color);
-  caret-color: transparent;
-}
-
-#logo {
-  height: 150px;
   caret-color: transparent;
 }
 
 button,
 input {
-  width: 250px;
+  width: 200px;
   height: 50px;
-  font-size: 24px;
+  font-size: 18px;
   background-color: var(--background-color);
   border-radius: 8px;
   caret-color: transparent;
@@ -109,7 +102,7 @@ input[type="color"]::-webkit-color-swatch {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* margin: 100px; */
+  margin-top: 50px;
 }
 
 .grid {
